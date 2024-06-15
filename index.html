@@ -19,17 +19,22 @@
 
   <div class="container">
     <section class="section" id="intro">
-      <header>
-        <h1>Shivika Singh</h1>
-        <p class="profession">Computer Science Graduate Student</p>
-        <p class="contact">Mountain View, CA 94043 | +1 770-298-7554 | shivikasingh275@gmail.com | linkedin.com/in/shivikasingh98/ | github.com/shivika275</p>
-      </header>
-      <div class="summary">
-        <h2>Hello, World! 👋</h2>
-        <p>Welcome to my resume! I'm a passionate computer science graduate student with a strong background in artificial intelligence, robotics, and software engineering. I thrive on developing innovative solutions using cutting-edge technologies and collaborating in diverse teams.</p>
-        <p>With a perfect 4.0 GPA from Georgia Tech and a stellar academic record, I'm ready to take on new challenges and make a lasting impact in the tech world. Let's embark on an exciting journey together and create something truly remarkable!</p>
-      </div>
-    </section>
+        <header>
+          <div class="header-content">
+            <img src="images/Shivika.jpg" alt="Your Name" class="profile-image">
+            <div class="name-profession">
+              <h1>Shivika Singh</h1>
+              <p class="profession">Computer Science Graduate Student</p>
+              <p class="contact">Mountain View, CA 94043 | +1 770-298-7554 | shivikasingh275@gmail.com | linkedin.com/in/shivikasingh98/ | github.com/shivika275</p>
+            </div>
+        </div>
+        </header>
+        <div class="summary">
+          <h2>Hello, World! 👋</h2>
+          <p>Welcome to my resume! I'm a passionate computer science graduate student with a strong background in artificial intelligence, robotics, and software engineering. I thrive on developing innovative solutions using cutting-edge technologies and collaborating in diverse teams.</p>
+          <p>With a perfect 4.0 GPA from Georgia Tech and a stellar academic record, I'm ready to take on new challenges and make a lasting impact in the tech world. Let's embark on an exciting journey together and create something truly remarkable!</p>
+        </div>
+      </section>
 
     <section class="section" id="education">
       <h2>Education</h2>
@@ -104,20 +109,34 @@
 
 
     <section class="section" id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Real-time Balance Calculator Service using Event Sourcing</h3>
-        <p class="technologies">Java, Spring Boot</p>
-        <p class="date">Mar - April 2024</p>
-        <p>Developed a real-time balance calculator service with REST APIs for authorized fund additions and deductions, while maintaining an event log to track all the events and enable server state restoration in case of failure.</p>
-      </div>
-      <div class="project">
-        <h3>Multi-Agent RL Benchmark and Learning Environment for Robotarium (MARBLER)</h3>
-        <p class="technologies">Python, Pytorch, Robotarium</p>
-        <p class="date">Jan - Jun 2023</p>
-        <p>Developed an open-source OpenAI Gym environment for benchmarking Multi-Agent Reinforcement Learning (MARL) algorithms that supports sim-to-real transfer to turtlebots through Georgia Tech's Robotarium simulator. Performed extensive hyper-parameter search for benchmarking SOTA MARL algorithms implemented in the E-PyMARL platform on MARBLER.</p>
-      </div>
-    </section>
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="images/event-source.png" alt="Icon" class="project-icon-1">
+            <div class="project-details">
+                <h3>Real-time Balance Calculator Service using Event Sourcing</h3>
+                <p class="technologies">Java, Spring Boot</p>
+                <p class="date">Mar - April 2024</p>
+                <ul class="project-description">
+                    <li>Developed a real-time balance calculator service with REST APIs for authorized fund additions and deductions.</li>
+                    <li>Maintained an event log to track all the events and enable server state restoration in case of failure.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/marbler.png" alt="Icon" class="project-icon-2">
+            <div class="project-details">
+                <h3>Multi-Agent RL Benchmark and Learning Environment for Robotarium (MARBLER)</h3>
+                <p class="technologies">Python, Pytorch, Robotarium</p>
+                <p class="date">Jan - Jun 2023</p>
+                <ul class="project-description">
+                    <li>Developed an open-source OpenAI Gym environment for benchmarking Multi-Agent Reinforcement Learning (MARL) algorithms.</li>
+                    <li>Supported sim-to-real transfer to turtlebots through Georgia Tech's Robotarium simulator.</li>
+                    <li>Performed extensive hyper-parameter search for benchmarking SOTA MARL algorithms implemented in the E-PyMARL platform on MARBLER.</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      
 
     <section class="section" id="publications">
       <h2>Publications</h2>
