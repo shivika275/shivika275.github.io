@@ -1,0 +1,251 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+/* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f2f2f2; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.toolbar {
+  background-color: #e0e0e0; /* Light gray toolbar color */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.toolbar-link {
+  color: #333; /* Dark text color for toolbar links */
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toolbar-link:hover {
+  background-color: #d0d0d0; /* Slightly darker hover color */
+}
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  padding-top: 60px; /* Add padding to avoid content overlapping with the toolbar */
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  scroll-snap-align: start;
+  transition: background-color 0.5s ease;
+}
+
+/* Section background colors */
+.section:nth-child(odd) {
+  background-color: #f2f2f2; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+.section:nth-child(even) {
+  background-color: #e0e0e0; /* Light gray background color */
+  color: #333; /* Dark text color */
+}
+
+/* Header styles */
+header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #00c853; /* Green color for headings */
+  animation: slideInLeft 1s ease;
+}
+
+.profession {
+  font-size: 20px;
+  font-weight: 400;
+  color: #666; /* Medium gray color for profession */
+  margin-bottom: 10px;
+  animation: slideInRight 1s ease;
+}
+
+.contact {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888; /* Light gray color for contact info */
+  animation: slideInLeft 1s ease;
+}
+
+/* Section styles */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00c853; /* Green color for section headings */
+  margin-bottom: 20px;
+  position: relative;
+  animation: slideInLeft 1s ease;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #00e676; /* Lighter green color for bullet points */
+  border-radius: 50%;
+}
+
+.education-container,
+.job,
+.skills,
+.project,
+.publication {
+  margin-bottom: 20px;
+  animation: slideInRight 1s ease;
+}
+
+.education-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+.college-logo {
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.job {
+  display: flex;
+  align-items: flex-start;
+}
+
+.job-image {
+  margin-right: 20px;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .skill-card {
+      flex: 1 1 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-card {
+      flex: 1 1 100%;
+    }
+  }
+  
+  .skill-card h3 {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00c853; /* Green color for subsection headings */
+  margin-bottom: 5px;
+  animation: slideInLeft 1s ease;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888; /* Light gray color for dates */
+  margin-bottom: 10px;
+  animation: slideInRight 1s ease;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+  animation: slideInLeft 1s ease;
+}
+
+li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+li::before {
+  content: "\2022";
+  position: absolute;
+  left: -15px;
+  color: #00e676; /* Lighter green color for bullet points */
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
